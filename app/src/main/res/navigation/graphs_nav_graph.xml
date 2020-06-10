@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/graphs_nav_graph"
+    app:startDestination="@id/graphsFragment">
+
+
+    <fragment
+        android:id="@+id/graphsFragment"
+        android:name="com.e.occano.ui.main.graphs.GraphsFragment"
+        android:label="GraphsFragment"
+
+        />
+    <fragment
+        android:id="@+id/createBlogFragment"
+        android:name="com.e.occano.ui.main.graphs.CreateBlogFragment"
+        android:label="fragment_create_blog"
+        tools:layout="@layout/fragment_create_blog" />
+
+</navigation>

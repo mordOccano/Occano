@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/dashboard_nav_graph"
+    app:startDestination="@id/dashboardFragment">
+
+    <fragment
+        android:id="@+id/calibrationFragment"
+        android:name="com.e.occano.ui.main.dashboard.CalibrationFragment"
+        android:label="fragment_calibration"
+        tools:layout="@layout/fragment_calibration" >
+        <action
+            android:id="@+id/action_calibrationFragment_to_dashboardFragment"
+            app:destination="@id/dashboardFragment"
+            app:popEnterAnim="@anim/fade_in"
+            app:popExitAnim="@anim/fade_out"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out"/>
+        <action
+            android:id="@+id/action_calibrationFragment_to_cylindersFragment"
+            app:destination="@id/cylindersFragment"
+            app:popEnterAnim="@anim/fade_in"
+            app:popExitAnim="@anim/fade_out"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out"/>
+    </fragment>
+    <fragment
+        android:id="@+id/cylindersFragment"
+        android:name="com.e.occano.ui.main.dashboard.CylindersFragment"
+        android:label="fragment_cylinders"
+        tools:layout="@layout/fragment_cylinders" >
+        <action
+            android:id="@+id/action_cylindersFragment_to_calibrationFragment"
+            app:destination="@id/calibrationFragment"
+            app:popEnterAnim="@anim/fade_in"
+            app:popExitAnim="@anim/fade_out"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out"/>
+        <action
+            android:id="@+id/action_cylindersFragment_to_dashboardFragment"
+            app:destination="@id/dashboardFragment"
+            app:popEnterAnim="@anim/fade_in"
+            app:popExitAnim="@anim/fade_out"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out"/>
+    </fragment>
+    <fragment
+        android:id="@+id/dashboardFragment"
+        android:name="com.e.occano.ui.main.dashboard.DashboardFragment"
+        android:label="fragment_dashboard"
+        tools:layout="@layout/fragment_dashboard" >
+        <action
+            android:id="@+id/action_dashboardFragment_to_cylindersFragment"
+            app:destination="@id/cylindersFragment"
+            app:popEnterAnim="@anim/fade_in"
+            app:popExitAnim="@anim/fade_out"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out"/>
+        <action
+            android:id="@+id/action_dashboardFragment_to_calibrationFragment"
+            app:destination="@id/calibrationFragment"
+            app:popEnterAnim="@anim/fade_in"
+            app:popExitAnim="@anim/fade_out"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out"/>
+    </fragment>
+    <fragment
+        android:id="@+id/updateBlogFragment"
+        android:name="com.e.occano.ui.main.dashboard.UpdateBlogFragment"
+        android:label="fragment_update_blog"
+        tools:layout="@layout/fragment_update_blog" >
+        <action
+            android:id="@+id/action_updateBlogFragment_to_viewBlogFragment"
+            app:destination="@id/viewBlogFragment"
+            app:popEnterAnim="@anim/fade_in"
+            app:popExitAnim="@anim/fade_out"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out"/>
+        <action
+            android:id="@+id/action_updateBlogFragment_to_dashboardFragment"
+            app:destination="@id/dashboardFragment"
+            app:popEnterAnim="@anim/fade_in"
+            app:popExitAnim="@anim/fade_out"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out"/>
+    </fragment>
+    <fragment
+        android:id="@+id/viewBlogFragment"
+        android:name="com.e.occano.ui.main.dashboard.ViewBlogFragment"
+        android:label="ViewBlogFragment" >
+        <action
+            android:id="@+id/action_viewBlogFragment_to_updateBlogFragment"
+            app:destination="@id/updateBlogFragment"
+            app:popEnterAnim="@anim/fade_in"
+            app:popExitAnim="@anim/fade_out"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out"/>
+    </fragment>
+    <fragment
+        android:id="@+id/blogFragment"
+        android:name="com.e.occano.ui.main.dashboard.BlogFragment"
+        android:label="fragment_blog"
+        tools:layout="@layout/fragment_blog" />
+</navigation>

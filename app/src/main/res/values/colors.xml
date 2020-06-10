@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#090946</color>
+    <color name="colorPrimaryDark">#001657</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="colorText">#BDD3FD</color>
+    <color name="colorbackgroundWhite">#768FBE</color>
+    <color name="colorItemBackTrue">#001657</color>
+    <color name="colorItemBackFalse">#435A96</color>
+    <color name="colorItemBottomtint">#8990C5</color>
+    <color name="colorItemBottomtext">#8990C5</color>
+    <color name="colorItemBottomBackground">#CBC0C1DD</color>
+
+    <color name="colorOccanoText">#DFE3FF</color>
+    <color name="colorOccanoTextDark">#070C2E</color>
+    <color name="colorOccanoSecondary">#5D767C</color>
+    <color name="colorOccanoAlertRed">#420C0C</color>
+    <color name="colorOccanoAlertRedLight">#C94040</color>
+    <color name="colorOccanoAlertBlue">#2954BB</color>
+    <color name="colorOccanoAlertBlueLight">#B1D6E9</color>
+    <color name="colorOccanoAlertYellow">#776D1C</color>
+    <color name="colorOccanoAlertYellowLight">#EDFFF6AE</color>
+    <color name="colorOccanoBackground">#2E4480</color>
+    <color name="colorItemBackFalseAlpha">#606E91</color>
+
+
+    <color name="ACTIVE_COLOR">#e3672d</color>
+    <color name="UNACTIVE_COLOR">#9a9a9a</color>
+    <color name="SECOND_COLOR">#c99212</color>
+
+    <!-- Secondary theme colors -->
+    <color name="tealDark">#0094DE</color>
+    <color name="tealLight">#9FDAF7</color>
+    <color name="link_blue">#0000EE</color>
+
+    <!-- other -->
+    <color name="red">#e22b2b</color>
+    <color name="red2">#fc8b8d</color>
+    <color name="grey1">#f2f2f2</color>
+    <color name="grey2">#c4c4c4</color>
+    <color name="grey3">#a8a8a8</color>
+    <color name="grey4">#7d7d7d</color>
+    <color name="grey5">#5c5c5c</color>
+
+    <color name="default_background_color">#EEEEEE</color>
+
+
+</resources>

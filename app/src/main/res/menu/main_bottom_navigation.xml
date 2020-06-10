@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/menu_nav_blog"
+        android:title="@string/dashboard"
+        android:icon="@drawable/ic_dashboard_black_24dp"/>
+
+    <item android:id="@+id/menu_nav_create_blog"
+        android:title="@string/alerts"
+        android:icon="@drawable/ic_notifications_black_24dp"
+        />
+
+    <item android:id="@+id/menu_nav_account"
+        android:title="@string/graphs"
+        android:icon="@drawable/ic_show_chart_black_24dp"/>
+
+</menu>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/alerts_nav_graph"
+    app:startDestination="@id/statusFragment">
+    <fragment
+        android:id="@+id/updateAccountFragment"
+        android:name="com.e.occano.ui.main.alerts.UpdateAccountFragment"
+        android:label="UpdateAccountFragment" >
+        <action
+            android:id="@+id/action_updateAccountFragment_to_accountFragment"
+            app:destination="@id/accountFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/changePasswordFragment"
+        android:name="com.e.occano.ui.main.alerts.ChangePasswordFragment"
+        android:label="ChangePasswordFragment" >
+        <action
+            android:id="@+id/action_changePasswordFragment_to_accountFragment"
+            app:destination="@id/accountFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/accountFragment"
+        android:name="com.e.occano.ui.main.alerts.AccountFragment"
+        android:label="fragment_account"
+        tools:layout="@layout/fragment_account" >
+        <action
+            android:id="@+id/action_accountFragment_to_changePasswordFragment"
+            app:destination="@id/changePasswordFragment" />
+        <action
+            android:id="@+id/action_accountFragment_to_updateAccountFragment"
+            app:destination="@id/updateAccountFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/statusFragment"
+        android:name="com.e.occano.ui.main.alerts.status.StatusFragment"
+        android:label="StatusFragment"
+        >
+        <action
+            android:id="@+id/action_statusFragment_to_accountFragment"
+            app:destination="@id/accountFragment"
+            />
+    </fragment>
+</navigation>
